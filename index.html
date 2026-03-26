@@ -17,11 +17,10 @@
             line-height: 1.6;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 2rem;
         }
-        /* 新增：头部布局改为 flex，实现头像+文字并排 */
         header {
             display: flex;
             align-items: center;
@@ -32,7 +31,6 @@
             margin-bottom: 2rem;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-        /* 头像样式 */
         .avatar {
             width: 80px;
             height: 80px;
@@ -52,6 +50,21 @@
             font-size: 1.1rem;
             color: #7f8c8d;
         }
+
+        /* 👇 这里是并排两个盒子 */
+        .box-row {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .box {
+            flex: 1;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
         .content {
             background-color: #fff;
             padding: 2rem;
@@ -70,24 +83,28 @@
 <body>
     <div class="container">
         <header>
-            <!-- 替换为你的头像链接 -->
             <img src="https://via.placeholder.com/80" alt="头像" class="avatar">
             <div class="header-text">
                 <h1>你好，我是 JiangFJ-art</h1>
                 <p class="subtitle">欢迎来到我的个人主页</p>
             </div>
         </header>
+
+        <!-- 👇 两个矩形并排 -->
+        <div class="box-row">
+            <div class="box">
+                <h3>左边盒子</h3>
+                <p>这里写内容</p>
+            </div>
+            <div class="box">
+                <h3>右边盒子</h3>
+                <p>这里写内容</p>
+            </div>
+        </div>
+
         <div class="content">
             <h2>关于我</h2>
             <p>这里可以写你的自我介绍、兴趣爱好或者职业信息。</p>
-            <h2>我的项目</h2>
-            <ul>
-                <li><a href="https://github.com/JiangFJ-art" target="_blank">GitHub</a> - 查看我的代码</li>
-                <li>项目1 - 简单描述你的作品</li>
-                <li>项目2 - 简单描述你的作品</li>
-            </ul>
-            <h2>联系我</h2>
-            <p>邮箱：your-email@example.com</p>
         </div>
     </div>
 </body>
