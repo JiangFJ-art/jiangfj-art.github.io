@@ -19,13 +19,12 @@ body{font-family:Arial,sans-serif;background:#f5f7fa;padding:30px}
   text-align:center;
 }
 
-/* 矩形头像 */
+/* 绝对不会失效的矩形头像 */
 .avatar{
   width:160px;
   height:200px;
+  background:#4285F4;
   border-radius:6px;
-  object-fit:cover;
-  border:2px solid #4285F4;
   margin-bottom:20px;
 }
 
@@ -69,9 +68,9 @@ body{font-family:Arial,sans-serif;background:#f5f7fa;padding:30px}
 <div class="container">
 <div class="wrapper">
 
-<!-- 左侧：头像 + 名字 + 座右铭 -->
+<!-- 左侧 -->
 <div class="left">
-  <img src="https://via.placeholder.com/160x200" alt="Avatar" class="avatar">
+  <div class="avatar"></div>
   <div class="name">JiangFJ-art</div>
   <div class="motto">
     We wouldn’t have started if we’d known how hard it would be.<br>
@@ -79,7 +78,7 @@ body{font-family:Arial,sans-serif;background:#f5f7fa;padding:30px}
   </div>
 </div>
 
-<!-- 右侧内容 -->
+<!-- 右侧 -->
 <div class="right">
   <div class="section">
     <h2>Biography</h2>
