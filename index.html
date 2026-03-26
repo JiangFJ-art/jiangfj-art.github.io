@@ -21,16 +21,30 @@
             margin: 0 auto;
             padding: 2rem;
         }
+        /* 新增：头部布局改为 flex，实现头像+文字并排 */
         header {
-            text-align: center;
-            padding: 3rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem;
             background-color: #fff;
             border-radius: 8px;
             margin-bottom: 2rem;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
+        /* 头像样式 */
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #3498db;
+        }
+        .header-text {
+            flex: 1;
+        }
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 0.5rem;
             color: #2c3e50;
         }
@@ -56,8 +70,12 @@
 <body>
     <div class="container">
         <header>
-            <h1>你好，我是 JiangFJ-art</h1>
-            <p class="subtitle">欢迎来到我的个人主页</p>
+            <!-- 替换为你的头像链接 -->
+            <img src="https://via.placeholder.com/80" alt="头像" class="avatar">
+            <div class="header-text">
+                <h1>你好，我是 JiangFJ-art</h1>
+                <p class="subtitle">欢迎来到我的个人主页</p>
+            </div>
         </header>
         <div class="content">
             <h2>关于我</h2>
