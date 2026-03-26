@@ -12,7 +12,17 @@ body{font-family:Arial,sans-serif;background:#f5f7fa;padding:30px}
 
 /* 左侧 1/5 */
 .left{width:20%;background:#fff;padding:30px 20px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.08);text-align:center}
-.avatar{width:100px;height:100px;border-radius:50%;border:3px solid #4285F4;margin-bottom:20px}
+
+/* 👇 矩形大头像 */
+.avatar{
+  width:160px;
+  height:200px;
+  border-radius:6px;
+  object-fit:cover;
+  border:2px solid #4285F4;
+  margin-bottom:20px;
+}
+
 .name{font-size:20px;font-weight:700;margin-bottom:12px}
 .motto{font-size:14px;color:#666;line-height:1.6}
 
@@ -30,7 +40,7 @@ body{font-family:Arial,sans-serif;background:#f5f7fa;padding:30px}
 
 <!-- 左侧 -->
 <div class="left">
-<img src="https://via.placeholder.com/100" alt="头像" class="avatar">
+<img src="https://via.placeholder.com/160x200" alt="头像" class="avatar">
 <div class="name">JiangFJ-art</div>
 <div class="motto">追风赶月莫停留<br>平芜尽处是春山</div>
 </div>
