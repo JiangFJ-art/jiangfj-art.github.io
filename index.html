@@ -10,10 +10,16 @@ body{font-family:Arial,sans-serif;background:#f5f7fa;padding:30px}
 .container{max-width:1200px;margin:0 auto}
 .wrapper{display:flex;gap:20px}
 
-/* 左侧 1/5 */
-.left{width:20%;background:#fff;padding:30px 20px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.08);text-align:center}
+.left{
+  width:20%;
+  background:#fff;
+  padding:30px 20px;
+  border-radius:12px;
+  box-shadow:0 2px 10px rgba(0,0,0,.08);
+  text-align:center;
+}
 
-/* 👇 矩形大头像 */
+/* 矩形大头像 */
 .avatar{
   width:160px;
   height:200px;
@@ -23,46 +29,84 @@ body{font-family:Arial,sans-serif;background:#f5f7fa;padding:30px}
   margin-bottom:20px;
 }
 
-.name{font-size:20px;font-weight:700;margin-bottom:12px}
-.motto{font-size:14px;color:#666;line-height:1.6}
+.name{
+  font-size:20px;
+  font-weight:700;
+  margin-bottom:12px;
+}
 
-/* 右侧 4/5 */
-.right{width:80%;background:#fff;padding:35px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+/* 黄仁勋金句英文 */
+.motto{
+  font-size:14px;
+  color:#666;
+  line-height:1.6;
+  font-style:italic;
+}
+
+.right{
+  width:80%;
+  background:#fff;
+  padding:35px;
+  border-radius:12px;
+  box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
 .section{margin-bottom:25px}
-.section h2{font-size:20px;margin-bottom:10px;padding-bottom:5px;border-bottom:2px solid #4285F4;display:inline-block}
-.section p,.section li{font-size:15px;line-height:1.7}
+.section h2{
+  font-size:20px;
+  margin-bottom:10px;
+  padding-bottom:5px;
+  border-bottom:2px solid #4285F4;
+  display:inline-block;
+}
+.section p,.section li{
+  font-size:15px;
+  line-height:1.7;
+}
 .section ul{padding-left:20px}
 </style>
 </head>
+
 <body>
 <div class="container">
 <div class="wrapper">
 
-<!-- 左侧 -->
+<!-- 左侧：头像 + 名字 + 座右铭 -->
 <div class="left">
-<img src="avatar.png" alt="头像" class="avatar">
-<div class="name">JiangFJ-art</div>
-<div class="motto">追风赶月莫停留<br>平芜尽处是春山</div>
+  <img src="avatar.jpg" alt="头像" class="avatar">
+  <div class="name">JiangFJ-art</div>
+  <div class="motto">
+    We wouldn’t have started if we’d known how hard it would be.<br>
+    But ignorance kept us going.
+  </div>
 </div>
 
-<!-- 右侧 -->
+<!-- 右侧内容 -->
 <div class="right">
-<div class="section">
-<h2>关于我</h2>
-<p>这里是个人简介</p>
-</div>
-<div class="section">
-<h2>发表</h2>
-<ul><li>论文1</li><li>论文2</li></ul>
-</div>
-<div class="section">
-<h2>项目</h2>
-<ul><li>项目1</li><li>项目2</li></ul>
-</div>
-<div class="section">
-<h2>专利</h2>
-<ul><li>专利1</li><li>专利2</li></ul>
-</div>
+  <div class="section">
+    <h2>关于我</h2>
+    <p>这里是个人简介</p>
+  </div>
+  <div class="section">
+    <h2>发表</h2>
+    <ul>
+      <li>论文1</li>
+      <li>论文2</li>
+    </ul>
+  </div>
+  <div class="section">
+    <h2>项目</h2>
+    <ul>
+      <li>项目1</li>
+      <li>项目2</li>
+    </ul>
+  </div>
+  <div class="section">
+    <h2>专利</h2>
+    <ul>
+      <li>专利1</li>
+      <li>专利2</li>
+    </ul>
+  </div>
 </div>
 
 </div>
